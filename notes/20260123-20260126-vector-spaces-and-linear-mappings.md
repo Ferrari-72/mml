@@ -61,27 +61,49 @@ $$
 
 ### 2.3 例子
 
-**例子 1**: $(\mathbb{R} \setminus \{0\}, \cdot)$ 是阿贝尔群
+**Example 1**: $(\mathbb{R} \setminus \{0\}, \cdot)$ is an Abelian group
 
-**证明**:
-1. $\forall a, b \in \mathbb{R} \setminus \{0\}, a \cdot b \in \mathbb{R} \setminus \{0\}$ ✓
-2. $\forall a, b, c \in \mathbb{R} \setminus \{0\}, (a \cdot b) \cdot c = a \cdot (b \cdot c)$ ✓
-3. 考虑 $1 \in \mathbb{R} \setminus \{0\}$, $\forall a \in \mathbb{R} \setminus \{0\}, a \cdot 1 = 1 \cdot a = a$ ✓
-4. $\forall a \in \mathbb{R} \setminus \{0\}, a \cdot \frac{1}{a} = \frac{1}{a} \cdot a = 1$ ✓
-5. $\forall a, b \in \mathbb{R} \setminus \{0\}, a \cdot b = b \cdot a$ ✓
+**Proof**:
+1. **Closure**: $\forall a, b \in \mathbb{R} \setminus \{0\}, a \cdot b \in \mathbb{R} \setminus \{0\}$ ✓
+   - For any two non-zero real numbers, their product is also a non-zero real number.
 
-**练习**: $(\mathbb{R}, +)$ 是阿贝尔群
+2. **Associativity**: $\forall a, b, c \in \mathbb{R} \setminus \{0\}, (a \cdot b) \cdot c = a \cdot (b \cdot c)$ ✓
+   - Multiplication of real numbers is associative.
 
-**证明**:
-1. $\forall a, b \in \mathbb{R}, a + b \in \mathbb{R}$ ✓
-2. $\forall a, b, c \in \mathbb{R}, (a + b) + c = a + (b + c)$ ✓
-3. 考虑 $0 \in \mathbb{R}, \forall a \in \mathbb{R}, a + 0 = 0 + a = a$ ✓
-4. $\forall a \in \mathbb{R}, a + (-a) = -a + a = 0$ ✓
-5. $\forall a, b \in \mathbb{R}, a + b = b + a$ ✓
+3. **Identity element**: Consider $1 \in \mathbb{R} \setminus \{0\}$. For all $a \in \mathbb{R} \setminus \{0\}$, we have $a \cdot 1 = 1 \cdot a = a$ ✓
+   - The number 1 is the multiplicative identity (unit element).
 
-**反例**: $(\mathbb{R}, \cdot)$ 不是群
+4. **Inverse element**: For all $a \in \mathbb{R} \setminus \{0\}$, we have $a \cdot \frac{1}{a} = \frac{1}{a} \cdot a = 1$ ✓
+   - Every non-zero real number has a multiplicative inverse.
 
-因为对于 $0 \in \mathbb{R}$，不存在 $a \in \mathbb{R}$ 使得 $a \cdot 0 = 1$ ✗
+5. **Commutativity**: For all $a, b \in \mathbb{R} \setminus \{0\}, a \cdot b = b \cdot a$ ✓
+   - Multiplication of real numbers is commutative.
+
+Therefore, $(\mathbb{R} \setminus \{0\}, \cdot)$ is an Abelian group.
+
+**Exercise**: $(\mathbb{R}, +)$ is an Abelian group
+
+**Proof**:
+1. **Closure**: $\forall a, b \in \mathbb{R}, a + b \in \mathbb{R}$ ✓
+   - The sum of any two real numbers is a real number.
+
+2. **Associativity**: $\forall a, b, c \in \mathbb{R}, (a + b) + c = a + (b + c)$ ✓
+   - Addition of real numbers is associative.
+
+3. **Identity element**: Consider $0 \in \mathbb{R}$. For all $a \in \mathbb{R}$, we have $a + 0 = 0 + a = a$ ✓
+   - The number 0 is the additive identity.
+
+4. **Inverse element**: For all $a \in \mathbb{R}$, we have $a + (-a) = -a + a = 0$ ✓
+   - Every real number has an additive inverse (its negative).
+
+5. **Commutativity**: For all $a, b \in \mathbb{R}, a + b = b + a$ ✓
+   - Addition of real numbers is commutative.
+
+Therefore, $(\mathbb{R}, +)$ is an Abelian group.
+
+**Counterexample**: $(\mathbb{R}, \cdot)$ is not a group
+
+For $0 \in \mathbb{R}$, there does not exist $a \in \mathbb{R}$ such that $a \cdot 0 = 1$ ✗
 
 ---
 
